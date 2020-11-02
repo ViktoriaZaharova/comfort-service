@@ -68,6 +68,14 @@
     max-width: 172px
     margin: 0 0 0 auto
 
+  .news-box__img
+    width: 200px
+    height: 200px
+
+  .news-box__body
+    width: calc(100% - 200px)
+    padding: 20px 0 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .navbar-toggler
@@ -363,6 +371,18 @@
   .call-item .consent
     margin: 10px auto 0
 
+  .news-box__img
+    width: 150px
+    height: 150px
+
+  .news-box__body
+    width: calc(100% - 150px)
+
+  .news-box
+    padding: 20px
+    .btn
+      margin: 20px 0 0
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -407,9 +427,33 @@
   h2
     margin: 0 auto 25px
 
+  h1
+    font-size: 28px
+    margin: 0 auto 25px
+
   .reasons-box
     background: linear-gradient(90deg, #000000 35.46%, rgba(0, 0, 0, 0) 80.55%), url("../img/reasons.png") no-repeat right center
       size: 100%, cover
 
   .trust-us__box
     padding: 0
+
+  .news-box
+    flex-direction: column
+    align-items: center
+    h3
+      text-align: center
+      width: 100%
+    .btn
+      margin: 20px auto 0
+
+  .news-box__body
+    width: 100%
+    padding: 20px 0 0
+    order: 1
+
+  .news-box__img
+    margin: 0 auto
+
+  .news
+    margin: 20px 0 0

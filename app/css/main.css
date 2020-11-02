@@ -265,7 +265,8 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 auto 40px; }
 
 h2 {
   text-align: center;
@@ -285,7 +286,8 @@ header {
   .home h1 {
     font-size: 48px;
     text-transform: none;
-    text-align: left; }
+    text-align: left;
+    margin: 0; }
   .home .btn {
     margin: 56px 0 50px;
     height: 30px;
@@ -1299,6 +1301,72 @@ footer {
     height: 17px;
     margin: 0 5px 0 0; }
 
+.news {
+  margin: 30px 0 0; }
+
+.news-box {
+  margin: 0 0 24px;
+  border-radius: 20px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 21px 23px 30px;
+  font-size: 14px;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
+  .news-box h3 {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 18px; }
+  .news-box .btn {
+    margin: auto 0 0;
+    max-width: 172px; }
+
+.news-box__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: calc(100% - 244px);
+  padding: 25px 35px 0 0; }
+
+.news-box__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  height: 244px;
+  width: 244px;
+  overflow: hidden; }
+  .news-box__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1356,7 +1424,13 @@ footer {
       font-size: 18px; }
   .call-item .form-group-comment {
     max-width: 172px;
-    margin: 0 0 0 auto; } }
+    margin: 0 0 0 auto; }
+  .news-box__img {
+    width: 200px;
+    height: 200px; }
+  .news-box__body {
+    width: calc(100% - 200px);
+    padding: 20px 0 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1616,7 +1690,16 @@ footer {
   .call-item .form-group button {
     margin: 0 auto; }
   .call-item .consent {
-    margin: 10px auto 0; } }
+    margin: 10px auto 0; }
+  .news-box__img {
+    width: 150px;
+    height: 150px; }
+  .news-box__body {
+    width: calc(100% - 150px); }
+  .news-box {
+    padding: 20px; }
+    .news-box .btn {
+      margin: 20px 0 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -1649,9 +1732,35 @@ footer {
       margin: 0; }
   h2 {
     margin: 0 auto 25px; }
+  h1 {
+    font-size: 28px;
+    margin: 0 auto 25px; }
   .reasons-box {
     background: -webkit-gradient(linear, left top, right top, color-stop(35.46%, #000000), color-stop(80.55%, rgba(0, 0, 0, 0))), url("../img/reasons.png") no-repeat right center;
     background: linear-gradient(90deg, #000000 35.46%, rgba(0, 0, 0, 0) 80.55%), url("../img/reasons.png") no-repeat right center;
       background-size: 100%, cover; }
   .trust-us__box {
-    padding: 0; } }
+    padding: 0; }
+  .news-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .news-box h3 {
+      text-align: center;
+      width: 100%; }
+    .news-box .btn {
+      margin: 20px auto 0; }
+  .news-box__body {
+    width: 100%;
+    padding: 20px 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .news-box__img {
+    margin: 0 auto; }
+  .news {
+    margin: 20px 0 0; } }
