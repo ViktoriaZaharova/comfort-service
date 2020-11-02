@@ -88,6 +88,11 @@
   .call-two
     margin: 35px 0 50px
 
+  .about-min-body
+    padding: 20px
+    h3
+      margin: 0 0 20px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .navbar-toggler
@@ -189,6 +194,32 @@
     p
       font-size: 18px
 
+  .about-main
+    h1
+      max-width: none
+      margin: 0 0 40px
+    .box-text
+      max-width: none
+    h3
+      font-size: 20px
+      margin: 0 0 20px
+
+  .about-main__content
+    margin: 0 0 30px
+
+  .about-min-img, .about-min-body
+    height: 220px
+
+  .presentation-wrapper
+    margin: 30px auto 0
+    flex-direction: column
+    align-items: center
+    h4
+      margin: 0 auto 20px
+      text-align: center
+
+  .directors-word
+    margin: 40px 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -373,6 +404,21 @@
   .portfolio-page
     margin: 0 0 40px
 
+  .directors-word
+    .box-text
+      max-width: none
+    .btn
+      margin: 20px 0 0
+
+  .directors-word-img
+    margin: 30px auto 0
+
+  .management-staff
+    margin: 0 0 40px
+    h2
+      margin: 0 auto 30px
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px)
   header
@@ -423,7 +469,14 @@
   .footer-menu
     margin: 0 0 20px
 
+  .about-min-img, .about-min-body
+    height: auto
 
+  .about-min-body
+    padding: 30px 20px
+
+  .about-main
+    margin: 0 0 40px
 
 @media only screen and (max-width: 480px)
   .call-item
@@ -545,3 +598,16 @@
     h3
       font-size: 20px
       margin: 0 0 25px
+
+  .about-page__slider .slick-arrow
+    width: 15px
+    height: 30px
+
+  .about-page__slider .slick-prev
+    left: 10px
+
+  .about-page__slider .slick-next
+    right: 10px
+
+  .about-main h1
+    margin: 0 0 25px
