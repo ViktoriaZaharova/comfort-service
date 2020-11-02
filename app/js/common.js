@@ -2,7 +2,27 @@ $('.trust-us__slider').slick({
     slidesToShow: 5,
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
 });
 
 $('.portfolio-slider').slick({

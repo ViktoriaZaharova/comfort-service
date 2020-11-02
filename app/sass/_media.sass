@@ -3,53 +3,413 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  .nav-item
+    margin: 0 10px 0 0
 
+  .list-social
+    margin: 0 10px 0 auto
+    li
+      margin: 0 10px 0 0
+
+  header .btn
+    max-width: 150px
+
+  .home-content
+    padding: 0
+
+  .home
+    h1
+      font-size: 30px
+
+  .free-measurement
+    font-size: 20px
+
+  .main-banner
+    height: 326px
+
+  .list-services li a
+    height: 100px
+
+  .profitable h2
+    font-size: 30px
+    margin: 0 0 30px
+
+  .profitable-card__title
+    padding: 0 10px
+    font-size: 12px
+
+  .profitable-card__img
+    width: 100%
+    height: 150px
+
+  .payment-variable__wrap
+    flex-direction: column
+    align-items: center
+    h2
+      text-align: center
+      max-width: none
+      margin: 0 auto 20px
+    .list-check
+      max-width: none
+      width: 100%
+      justify-content: space-around
+      li
+        margin: 0 0 10px
+        &:last-child
+          margin: 0 0 10px
+
+  .calculate-call
+    padding: 20px
+    p
+      font-size: 18px
+
+  .call-item .form-group-comment
+    max-width: 172px
+    margin: 0 0 0 auto
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .navbar-toggler
+    display: block
+    margin: 0 0 0 10px
+
+  .navbar-collapse
+    position: fixed
+    transition: none
+    left: 0
+    top: 0
+    background: #fff
+    width: 100%
+    max-width: 300px
+    padding: 30px
+    height: 100%
+    overflow-y: auto
+    z-index: 3
+    box-shadow: 0px 4px 16px rgba(15, 89, 72, 0.4)
+
+  .nav-item
+    margin: 0 0 10px
+
+  .nav-link
+    font-size: 16px
+
+  .profitable
+    .btn
+      margin: 0 0 30px
+
+  .about-min .btn
+    margin: 20px auto 0
+
+  .advantages-in-numbers__box
+    margin: 0 0 30px
+    font-size: 20px
+    height: 200px
+    padding: 40px 20px 30px
+
+  .advantages-in-numbers__number
+    font-size: 30px
+    margin: 0 0 20px
+
+  .advantages-in-numbers
+    margin: 0 0 30px
+
+  .services-item
+    font-size: 18px
+    padding: 21px 25px
+    margin: 0 0 25px
+    &:last-child
+      padding: 7px 25px 15px
+
+  .services-item-max
+    padding: 35px 20px
+
+  .call-the-master
+    padding: 30px 20px
+    flex-direction: column
+    align-items: center
+    .form
+      width: 100%
+      margin: 10px 0 0
+
+  .call-the-master__content
+    width: 100%
+    text-align: center
+
+  .recommended-services
+    margin: 15px 0 0
+
+  .call-item .form-group-comment, .call-item .form-group
+    max-width: 49%
+
+  .call-item-manager
+    margin: 0 0 30px
+
+  .call-item
+    height: auto
+
+  footer
+    padding: 30px 0
+
+  .footer-menu
+    margin: 0 0 30px
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  header
+    padding: 10px 0
+
+  .free-measurement
+    width: 100%
+    padding: 10px 20px
+    font-size: 18px
+    height: auto
+    margin: 0 0 30px
+
+  .home
+    margin: 30px 0 50px
+    .btn
+      margin: 30px 0
+
+  .profitable-card
+    margin: 0 0 20px
+
+  .profitable
+    margin: 0 0 30px
+
+  .advantages-in-numbers__box
+    height: auto
+    font-size: 18px
+
+  .advantages-in-numbers__img
+    left: auto
+    right: 0
+    width: 150px
+    top: 20px
+
+  .nav-pills
+    margin: 0 0 30px
+    justify-content: space-around
+    .nav-item
+      margin: 0 0 10px
+
+  .product-card__title
+    margin: 20px 0 10px
+
+  .product-card__description
+    margin: 0 auto 10px
+
+  .product-card
+    margin: 0 0 20px
+
+  .installment-plan, .price-wrapper
+    margin: 0 auto 15px
+
+  .product-card__img
+    height: 170px
+
+  .portfolio-slider
+    padding: 0 40px
+    .slick-arrow
+      width: 30px
+      height: 30px
+
+  .prices
+    margin: 0 0 30px
+
+  .services-item-max, .services-item:last-child
+    margin: 0 0 25px
+    height: auto
+
+  .services-item__img
+    max-width: 100px
+
+  label
+    max-width: 49%
+    margin: 0
+
+  .form
+    flex-wrap: wrap
+    button
+      margin: 10px auto
+
+  .consent
+    max-width: none
+    width: 100%
+    text-align: center
+
+  .call-the-master .form
+    justify-content: space-between
+
+  .payment-variable__wrap .list-check
+    flex-direction: column
+    align-items: flex-start
+    li
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+
+  .list-check li:before
+    width: 30px
+    height: 30px
+
+  .payment-variable
+    margin: 40px 0
+
+  .calculate-call
+    flex-direction: column
+    align-items: center
+    text-align: center
+    .btn
+      margin: 20px auto 0
+    h2
+      text-align: center
+
+  .calculate-wrapper
+    margin: 0 0 40px
+
+  .reasons-box
+    padding: 40px 30px
+    height: 300px
+    h3
+      font-size: 20px
+      margin: 0 0 20px
+
+  .reasons-slider__nav
+    padding: 0 30px
+    bottom: 20px
+
+  .reasons-slider__nav .slick-dots li
+    width: 30px
+    height: 30px
+    margin: 0 10px 0 0
+    button
+      font-size: 18px
+
+  .trust-us
+    margin: 40px 0
+
+  .trust-us__slider
+    padding: 0 40px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 575px)
+  header
+    .list-social
+      display: none
+    .btn
+      margin: 0 0 0 auto
+
+  .home h1, .profitable h2
+    font-size: 26px
+
+  .list-services li a
+    height: 70px
+
+  .main-banner
+    height: 280px
+
+  .profitable
+    h2
+      text-align: center
+      margin: 0 auto 30px
+    .btn
+      margin: 0 auto 30px
+
+  .reviews
+    margin: 40px 0
+
+  .recommended-services
+    justify-content: center
+    align-items: center
+    display: flex
+    flex-direction: column
+
+  .recommended-services__info
+    justify-content: center
+
+  .reasons
+    margin: 0 0 40px
+
+  .footer-box
+    margin: 0 0 10px
+    &:last-child
+      margin: 0 0 20px
+
+  .links-location
+    margin: 0 0 20px
+
+  .footer-menu
+    margin: 0 0 20px
+
+@media only screen and (max-width: 480px)
+  .call-item
+    padding: 30px 20px
+    h2
+      margin: 0 0 20px
+
+  .call-item .form-group-comment, .call-item .form-group
+    max-width: none
+
+  .call-item .form-group button
+    margin: 0 auto
+
+  .call-item .consent
+    margin: 10px auto 0
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 420px)
+  header
+    .btn
+      display: none
 
+  .navbar-toggler
+    margin: 0 0 0 auto
 
-/*==========  Mobile First  ==========*/
+  .list-services li a
+    font-size: 9px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .main-banner
+    height: 240px
 
+  .free-measurement .icon-svg
+    width: 40px
+    height: 40px
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+  .profitable-card__title
+    min-height: auto
+    font-size: 9px
+    bottom: 10px
 
+  .profitable-card__price
+    margin: 15px 0 0
+    font-size: 12px
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  .portfolio-slider
+    padding: 0
 
+  .portfolio-slider__box
+    height: 270px
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  label
+    max-width: none
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
 
+  h2
+    margin: 0 auto 25px
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .reasons-box
+    background: linear-gradient(90deg, #000000 35.46%, rgba(0, 0, 0, 0) 80.55%), url("../img/reasons.png") no-repeat right center
+      size: 100%, cover
 
+  .trust-us__box
+    padding: 0

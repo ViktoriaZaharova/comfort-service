@@ -288,6 +288,7 @@ header
     flex: 1
 
     a
+      padding: 0 5px
       font-size: 10px
       height: 132px
       background: #232323
@@ -331,7 +332,10 @@ header
   margin: 86px 0 96px
 
 .trust-us__slider
-  padding: 0 74px
+  .slick-next
+    right: -44px
+  .slick-prev
+    left: -44px
 
 .slick-slide
   outline: none
@@ -907,6 +911,9 @@ input
   margin: 0 0 55px
   h2
     margin: 0 auto 24px
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
 
 .reasons-box
   width: 100%
