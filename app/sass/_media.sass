@@ -93,6 +93,9 @@
     h3
       margin: 0 0 20px
 
+  .call-info .form
+    padding: 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .navbar-toggler
@@ -253,9 +256,6 @@
     right: 0
     width: 150px
     top: 20px
-
-
-
 
   .product-card__title
     margin: 20px 0 10px
@@ -418,6 +418,35 @@
     h2
       margin: 0 auto 30px
 
+  .call-info__wrapper
+    flex-direction: column
+    align-items: center
+    h3
+      font-size: 20px
+    span
+      font-size: 12px
+
+  .call-info
+    margin: 40px 0 60px
+    .call-the-master__content
+      width: 100%
+      margin: 0 auto 20px
+      max-width: none
+    .form
+      width: 100%
+      max-width: none
+      button
+        order: -1
+        margin: 0 auto 10px
+
+  .call-info__wrapper .form-group-call:last-child
+    flex-direction: column
+    align-items: center
+    width: 100%
+
+
+  .call-info__wrapper .form-group-call
+    width: 49%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px)
@@ -611,3 +640,9 @@
 
   .about-main h1
     margin: 0 0 25px
+
+  .call-info__wrapper .form-group-call
+    width: 100%
+
+  .call-info__wrapper .form-group-call:last-child
+    margin: 0
