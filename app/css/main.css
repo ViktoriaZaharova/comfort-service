@@ -1528,6 +1528,61 @@ footer {
     width: 100%;
     max-width: none; }
 
+.portfolio-page {
+  margin: 0 0 84px; }
+  .portfolio-page .btn {
+    max-width: 172px;
+    margin: 15px auto 0; }
+
+.portfolio-box {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px; }
+
+.portfolio-box__img {
+  width: 100%;
+  height: 324px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 0 25px;
+  overflow: hidden; }
+  .portfolio-box__img:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 100%;
+    width: 5px;
+    background: #0F5948; }
+  .portfolio-box__img:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #0F5948;
+    width: 20px;
+    height: 20px; }
+  .portfolio-box__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1842,7 +1897,13 @@ footer {
     .form-group-call label {
       max-width: none; }
   .call-the-master-two .form button {
-    margin: 0 auto 10px; } }
+    margin: 0 auto 10px; }
+  .portfolio-box__img {
+    height: 250px; }
+  .portfolio-box {
+    margin: 0 0 25px; }
+  .portfolio-page {
+    margin: 0 0 40px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
