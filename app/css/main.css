@@ -1193,13 +1193,24 @@ input {
       color: #fff; }
     .call-item input::placeholder {
       color: #fff; }
+  .call-item textarea {
+    border-color: #fff;
+    color: #ffffff; }
+    .call-item textarea::-webkit-input-placeholder {
+      color: #fff; }
+    .call-item textarea::-moz-placeholder {
+      color: #fff; }
+    .call-item textarea::-ms-input-placeholder {
+      color: #fff; }
+    .call-item textarea::placeholder {
+      color: #fff; }
   .call-item .consent {
     color: #fff;
     max-width: none;
     margin: 0; }
 
 textarea {
-  border: 1px solid #fff;
+  border: 1px solid #0F5948;
     border-radius: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1207,18 +1218,18 @@ textarea {
   padding: 9px 19px;
   font-family: "gotham", sans-serif;
   font-size: 12px;
-  color: #ffffff;
+  color: #5C5C5C;
   background: transparent;
   width: 100%;
   height: 76px; }
   textarea::-webkit-input-placeholder {
-    color: #fff; }
+    color: #5C5C5C; }
   textarea::-moz-placeholder {
-    color: #fff; }
+    color: #5C5C5C; }
   textarea::-ms-input-placeholder {
-    color: #fff; }
+    color: #5C5C5C; }
   textarea::placeholder {
-    color: #fff; }
+    color: #5C5C5C; }
 
 .call-item-manager {
   background: #85BC5D; }
@@ -1430,6 +1441,93 @@ footer {
   z-index: 1;
   padding: 0 33px 32px 30px; }
 
+.sales-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 0 46px;
+  color: #fff;
+  padding: 70px 96px 20px;
+  min-height: 357px;
+  font-size: 24px; }
+  .sales-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(50%, rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 50%);
+    z-index: 2; }
+  .sales-box h3 {
+    text-transform: uppercase;
+    margin: 0 0 74px;
+    max-width: 550px;
+    width: 100%;
+    font-size: 48px;
+    font-weight: bold; }
+  .sales-box > * {
+    position: relative;
+    z-index: 2; }
+
+.sales-box__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1; }
+
+.call-two {
+  margin: 35px 0 140px; }
+
+.call-the-master-two {
+  padding: 46px 122px 54px 50px; }
+  .call-the-master-two h3 {
+    text-transform: uppercase;
+    margin: 0 0 17px; }
+  .call-the-master-two .call-the-master__content {
+    max-width: 350px;
+    width: 100%;
+    padding: 0 24px 0 0; }
+    .call-the-master-two .call-the-master__content span {
+      font-size: 14px; }
+  .call-the-master-two .form {
+    width: calc(100% - 350px);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .call-the-master-two .form button {
+      margin: 0 0 13px auto; }
+    .call-the-master-two .form .consent {
+      margin: 0; }
+
+.form-group-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .form-group-call label {
+    margin: 0 0 16px; }
+    .form-group-call label:last-child {
+      margin: 0; }
+
+.form-group-call-message {
+  max-width: 221px;
+  width: 100%; }
+  .form-group-call-message label {
+    width: 100%;
+    max-width: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1493,7 +1591,15 @@ footer {
     height: 200px; }
   .news-box__body {
     width: calc(100% - 200px);
-    padding: 20px 0 0; } }
+    padding: 20px 0 0; }
+  .call-the-master-two .call-the-master__content {
+    max-width: 270px; }
+  .call-the-master-two .form {
+    width: calc(100% - 270px); }
+  .call-the-master-two {
+    padding: 30px; }
+  .call-two {
+    margin: 35px 0 50px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1573,7 +1679,15 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .nav-pills .nav-item {
-      margin: 0 0 10px; } }
+      margin: 0 0 10px; }
+  .sales-box {
+    padding: 50px 30px 20px;
+    min-height: 300px; }
+    .sales-box h3 {
+      font-size: 24px;
+      max-width: 400px; }
+    .sales-box p {
+      font-size: 18px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1712,7 +1826,23 @@ footer {
       font-size: 16px;
       margin: 0 0 10px; }
   .services .nav-pills {
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+  .sales-box {
+    min-height: 240px; }
+    .sales-box h3 {
+      margin: 0 0 30px; }
+    .sales-box p {
+      font-size: 16px; }
+  .form-group-call {
+    margin: 0 0 10px;
+    width: 49%; }
+    .form-group-call:last-child {
+      width: 100%;
+      margin: 0; }
+    .form-group-call label {
+      max-width: none; }
+  .call-the-master-two .form button {
+    margin: 0 auto 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -1845,4 +1975,20 @@ footer {
   .news-box__img {
     margin: 0 auto; }
   .news {
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .form-group-call {
+    width: 100%; }
+  .form-group-call-message {
+    max-width: none; }
+  .call-two {
+    margin: 30px 0 40px; }
+  .sales-box {
+    margin: 0 0 30px;
+    padding: 30px 20px;
+    min-height: 200px; }
+    .sales-box:before {
+      background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(80%, rgba(0, 0, 0, 0)));
+      background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 80%); }
+    .sales-box h3 {
+      font-size: 20px;
+      margin: 0 0 25px; } }

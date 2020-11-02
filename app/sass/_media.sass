@@ -76,6 +76,18 @@
     width: calc(100% - 200px)
     padding: 20px 0 0
 
+  .call-the-master-two .call-the-master__content
+    max-width: 270px
+
+  .call-the-master-two .form
+    width: calc(100% - 270px)
+
+  .call-the-master-two
+    padding: 30px
+
+  .call-two
+    margin: 35px 0 50px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .navbar-toggler
@@ -167,6 +179,15 @@
     justify-content: space-around
     .nav-item
       margin: 0 0 10px
+
+  .sales-box
+    padding: 50px 30px 20px
+    min-height: 300px
+    h3
+      font-size: 24px
+      max-width: 400px
+    p
+      font-size: 18px
 
 
 /* Small Devices, Tablets */
@@ -324,6 +345,25 @@
   .services .nav-pills
     margin: 0 auto 30px
 
+  .sales-box
+    min-height: 240px
+    h3
+      margin: 0 0 30px
+    p
+      font-size: 16px
+
+  .form-group-call
+    margin: 0 0 10px
+    width: 49%
+    &:last-child
+      width: 100%
+      margin: 0
+    label
+      max-width: none
+
+  .call-the-master-two .form button
+    margin: 0 auto 10px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px)
   header
@@ -475,3 +515,22 @@
 
   .news
     margin: 20px 0 0
+
+  .form-group-call
+    width: 100%
+
+  .form-group-call-message
+    max-width: none
+
+  .call-two
+    margin: 30px 0 40px
+
+  .sales-box
+    margin: 0 0 30px
+    padding: 30px 20px
+    min-height: 200px
+    &:before
+      background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 80%)
+    h3
+      font-size: 20px
+      margin: 0 0 25px
