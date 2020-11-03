@@ -88,7 +88,7 @@
                     </a></li>
                 </ul>
 
-                <button type="button" class="btn btn-accent">Обратный звонок</button>
+                <button type="button" class="btn btn-accent" data-toggle="modal" data-target="#callModal">Обратный звонок</button>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -1013,6 +1013,31 @@
         </div>
     </div>
 </footer>
+
+<div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal-header">
+                <h2>Заказать звонок</h2>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-masters">
+                    <label><input type="text" placeholder="Имя" name="name"></label>
+                    <label><input type="text" placeholder="Телефон" name="phone" required></label>
+                    <button type="submit" class="btn btn-green">Оставить заявку</button>
+                    <div class="consent">Нажимая кнопку, вы даете согласие
+                        на обработку персональных данных
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
