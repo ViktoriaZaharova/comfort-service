@@ -2119,6 +2119,87 @@ footer {
     font-size: 14px;
     max-width: none; }
 
+.city-map {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 393px; }
+  .city-map iframe {
+    width: 100%;
+    height: 100%; }
+
+.city-wrapper {
+  width: 100%; }
+  .city-wrapper h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 15px; }
+
+.city-wrapper__line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 30px; }
+
+.city-wrapper__address {
+  font-size: 24px; }
+  .city-wrapper__address p {
+    margin: 0 0 15px; }
+
+.city-wrapper__contacts {
+  font-size: 14px; }
+  .city-wrapper__contacts p {
+    margin: 0 0 9px; }
+
+.phone-score {
+  margin: 12px 0 0;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px; }
+
+.city-wrapper__score-director {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px; }
+  .city-wrapper__score-director .btn {
+    max-width: 172px;
+    padding: 0;
+    width: 172px; }
+  .city-wrapper__score-director h4 {
+    font-weight: bold; }
+  .city-wrapper__score-director p {
+    margin: 9px 0; }
+
+.photo {
+  border-radius: 20px;
+  margin: 0 20px 0 0;
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2196,7 +2277,13 @@ footer {
     .about-min-body h3 {
       margin: 0 0 20px; }
   .call-info .form {
-    padding: 0; } }
+    padding: 0; }
+  .city-wrapper__address, .office-center {
+    font-size: 18px; }
+  .office-center {
+    margin: 30px 0; }
+  .address, .schedule {
+    margin: 0 0 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -2310,7 +2397,9 @@ footer {
       margin: 0 auto 20px;
       text-align: center; }
   .directors-word {
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .office-center h2 {
+    font-size: 24px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -2589,7 +2678,11 @@ footer {
   .about-min-body {
     padding: 30px 20px; }
   .about-main {
-    margin: 0 0 40px; } }
+    margin: 0 0 40px; }
+  .city-wrapper__score-director {
+    margin: 20px auto 0; }
+  .nav-pills-contacts .nav-link {
+    height: 60px; } }
 
 @media only screen and (max-width: 480px) {
   .call-item {
