@@ -1947,6 +1947,145 @@ footer
   align-items: center
   justify-content: center
 
+//calculate page
+.calculate
+  margin: 30px 0 40px
+
+.calculate-stages__header
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 24px
+  font-size: 24px
+  font-weight: bold
+  .number
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    background: $green
+    border-radius: 50%
+    min-width: 46px
+    width: 46px
+    height: 46px
+    margin: 0 21px 0 0
+
+
+.calculate-stages
+  padding: 0 0 0 30px
+  margin: 0 0 60px
+
+.calculate-stages__body
+  padding: 0 0 0 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.type-window__item
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  flex: 1
+  cursor: pointer
+  &:hover
+    .type-window__item-img
+      background: $green
+      .icon-svg
+        fill: #fff
+
+.type-window__item-img
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #85BC5D
+  width: 97px
+  height: 97px
+  padding: 10px 12px
+  margin: 0 auto 23px
+  transition: .3s ease
+
+.type-window__item.active
+  .type-window__item-img
+    background: $green
+    .icon-svg
+      fill: #fff
+
+.input-group
+  display: flex
+  align-items: center
+  input
+    width: 76px
+  span
+    font-size: 12px
+    margin: 0 7px
+
+
+.radio
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  font-size: 12px
+  font-family: $default-font
+  color: #000
+  margin: 0 0 12px
+  &:last-child
+    margin-bottom: 0
+  .radio-inp
+    display: none
+  .radio-custom
+    position: relative
+    width: 22px
+    min-width: 22px
+    height: 22px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid $accent
+      radius: 50%
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 12px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+  .radio-inp:checked + .radio-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      background: $accent
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+.label-group
+  width: 50%
+
+.calculate-contacts
+  h3
+    font-size: 24px
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0 0 12px
+  label
+    max-width: 172px
+    width: 100%
+    margin: 0 0 16px
+    &:last-child
+      margin: 23px 0 25px
+  .btn
+    max-width: 172px
+    margin: 0 0 13px
+
 
 @import "media"
 // Всегда в конце

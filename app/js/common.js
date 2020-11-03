@@ -76,3 +76,7 @@ $('.reviews-wrapper__slider').slick({
         }
     ]
 });
+
+$('.type-window__item').click(function () {
+   $(this).toggleClass('active');
+});
