@@ -2044,6 +2044,81 @@ footer {
     color: #85BC5D;
     margin: 0 0 0 28px; }
 
+.mb-100 {
+  margin-bottom: 100px; }
+
+.office-center {
+  margin: 76px 0 62px;
+  font-size: 24px; }
+  .office-center h2 {
+    text-align: left;
+    font-size: 36px;
+    margin: 0 0 34px; }
+
+.contacts-box {
+  font-weight: bold; }
+  .contacts-box a {
+    color: #000;
+    margin: 0 0 15px; }
+    .contacts-box a:last-child {
+      margin: 0; }
+  .contacts-box .mail {
+    color: #85BC5D; }
+
+.schedule p {
+  color: #85BC5D; }
+
+.schedule span {
+  font-weight: bold;
+  margin: 0 0 0 5px; }
+
+.schedule li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 15px; }
+  .schedule li:last-child {
+    margin: 0; }
+
+.address p {
+  margin: 0 0 15px;
+  font-weight: bold; }
+
+.address span {
+  color: #85BC5D; }
+
+.contacts h1 {
+  margin: 0 0 30px; }
+
+.contacts h3 {
+  font-weight: bold;
+  margin: 0 0 26px;
+  font-size: 24px; }
+
+.nav-pills-contacts {
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .nav-pills-contacts .nav-item {
+    margin: 0 0 16px;
+    width: 47.5%; }
+    .nav-pills-contacts .nav-item:last-child {
+      margin: 0 0 16px; }
+  .nav-pills-contacts .nav-link {
+    width: 100%;
+    border: 1px solid #0F5948;
+      border-radius: 15px;
+    height: 75px;
+    color: #5C5C5C;
+    font-size: 14px;
+    max-width: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
