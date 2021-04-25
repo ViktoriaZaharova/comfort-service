@@ -1,0 +1,390 @@
+@import "vars"
+
+.main-window
+  h1
+    font-size: 36px
+  .btn
+    max-width: 268px
+    font-weight: bold
+    justify-content: space-between
+    padding: 0 23px
+    height: 40px
+    border-radius: 20px
+    font-size: 14px
+    margin: 30px 0 0
+  .main-banner
+    height: 394px
+  .home-content
+    padding: 20px 0 0
+
+.main-advantages
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 16px 0 20px
+  font-size: 14px
+  .icon
+    width: 28px
+    height: 28px
+    min-width: 28px
+    fill: $accent
+    margin: 0 16px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+  li
+    margin: 0 0 20px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+
+//.history-company
+.history-company
+  .advantages-in-numbers__box
+    max-width: 267px
+    width: 100%
+    background: $accent
+    height: 183px
+    box-shadow: none
+    margin: 0 27px 20px 0
+    padding: 25px 28px
+    font-size: 18px
+    &:last-child
+      margin: 0 0 20px
+    p
+      line-height: 116.53%
+    .advantages-in-numbers__img
+      left: 110px
+      top: 38px
+      width: 174px
+    &:first-child
+      .advantages-in-numbers__img
+        top: 56px
+
+.equipment
+  h2
+    margin: 0 auto 37px
+
+
+.equipment-box
+  max-width: 164px
+  width: 100%
+  margin: 0 75px 30px 0
+  font-size: 18px
+  color: #fff
+  &__body
+    width: 100%
+    border-radius: 20px
+    box-shadow: 0px 4px 16px rgba(133, 188, 93, 0.5)
+    background: #85BC5D
+    height: 161px
+    padding: 97px 15px 10px
+  &__img
+    position: relative
+    z-index: 1
+    margin: 0 0 -78px -28px
+  &:first-child
+    .equipment-box__img
+      width: 168px
+  &:nth-child(2)
+    .equipment-box__img
+      width: 155px
+  &:nth-child(3)
+    .equipment-box__img
+      width: 229px
+      margin: 0 0 -48px -47px
+  &:last-child
+    margin: 0 0 30px
+    .equipment-box__img
+      width: 107px
+      margin: 0 0 -78px -26px
+
+.prices-my
+  margin: 40px 0 55px
+
+  .box-text
+    margin: 0
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15)
+    background: #fff
+    border-radius: 20px
+    padding: 17px 5px 20px
+    line-height: 140%
+    font-size: 14px
+
+
+.my-title
+  h2
+    font-size: 36px
+
+//.advantages
+.advantages
+  margin: 0 0 70px
+
+.advantages-box
+  color: #fff
+  background: $accent
+  box-shadow: 0px 4px 16px rgba(15, 89, 72, 0.4)
+  border-radius: 15px
+  display: flex
+  align-items: center
+  padding: 15px 30px 25px
+  height: 100%
+  h3
+    margin: 0 0 17px
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: bold
+  &__content
+    padding: 0 30px 0 0
+  p
+    font-size: 14px
+    line-height: 116.53%
+
+.advantages-box-even
+  padding: 15px 5px 12px 15px
+  .advantages-box__body
+    padding: 0
+
+
+//clients-reviews
+.clients-reviews
+  margin: 100px 0
+  h2
+    margin: 0 auto 17px
+  .btn
+    margin: 37px auto 0
+    width: fit-content
+    padding: 7px 37px
+
+.clients-reviews__box
+  background: #fff
+  width: 100%
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15)
+  max-width: 553px
+  margin: 20px auto
+  border-radius: 20px
+  padding: 28px 30px
+  font-size: 14px
+  h3
+    font-weight: bold
+    color: $green
+    margin: 0 0 20px
+
+.clients-reviews-slider
+  width: 100%
+  .slick-dots
+    bottom: 0
+    position: relative
+    width: 100%
+    li
+      width: 10px
+      height: 10px
+      border: 1px solid #85BC5D
+        radius: 50%
+      button
+        display: none
+    .slick-active
+      background: $green
+
+//main-balcony
+.main-balcony
+  .main-advantages
+    margin: 45px 0 0
+  .main-banner
+    height: 310px
+
+//category-services
+.category-services
+  margin: 0 0 100px
+
+.category-services-item
+  width: 100%
+  border-radius: 20px
+  overflow: hidden
+  background: $green
+  color: #fff
+  &__img
+    width: 100%
+    height: 233px
+    border-radius: 20px 20px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 22px 0
+    text-align: center
+    font-size: 18px
+    font-weight: bold
+
+.type-balcony__item
+  border: 1px solid #85BC5D
+    radius: 20px
+  max-width: 157px
+  width: 100%
+  height: 159px
+  margin: 0 auto 20px 0
+  padding: 21px
+  &:last-child
+    margin-right: 0
+  .type-window__item-img
+    padding: 0
+    margin: 0 auto 19px
+    height: 78px
+    width: 113px
+    border: none
+      radius: 0
+  &:hover
+    background: $green
+    color: #fff
+    .type-window__item-img
+      background: transparent
+
+.type-balcony__item.active
+  background: $green
+  color: #fff
+  .type-window__item-img
+    background: transparent
+
+
+.calculate-my
+  .radio
+    flex-wrap: wrap
+  .box-text
+    margin: 45px 0 0
+    font-size: 12px
+    line-height: 150%
+    max-width: 550px
+
+.radio-custom-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+
+.profile-brands-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  .radio
+    width: 76px
+  .radio-custom
+    width: 13px
+    height: 13px
+    min-width: 13px
+    margin: 0 5px 2px 0
+  .radio .radio-inp:checked + .radio-custom::before
+      width: 7px
+      height: 7px
+      top: 2px
+      left: 2px
+      transform: none
+
+.brands-product
+  width: 76px
+  height: 76px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #85BC5D
+    radius: 20px
+  padding: 6px 8px
+  margin: 0 0 20px
+  img
+    max-height: 100%
+
+.sizes-balcony
+  width: 100%
+  padding: 0 0 0 37px
+  label
+    width: 100%
+    max-width: 267px
+    margin: 0 0 12px
+  button
+    max-width: 172px
+
+.total-sum
+  width: 100%
+  margin: 57px 0 0
+  h3
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 19px
+
+.total-sum__val
+  color: #85BC5D
+  font-size: 48px
+  font-weight: bold
+
+//.example-price
+
+.example-price-box
+  height: 100%
+  background: #fff
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15)
+  border-radius: 20px
+  overflow: hidden
+  font-size: 12px
+  .btn
+    margin: 28px auto 0
+    max-width: 172px
+  &__img
+    width: 100%
+    height: 162px
+    border-radius: 20px 20px 0px 0px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 22px 20px 32px
+  h3
+    font-size: 14px
+    font-weight: bold
+    line-height: 150%
+
+.list-price
+  margin: 13px 0
+  padding: 9px 0 18px
+  font-size: 12px
+  strong
+    font-weight: bold
+  border:
+    top: 1px solid #85BC5D
+    bottom: 1px solid #85BC5D
+  li
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 11px
+    &:last-child
+      margin: 0
+
+.example-price-wrapper
+  margin: 0 -10px
+  padding: 0 144px
+  .col-12
+    padding: 0 10px
+
+.price-total
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 28px 0 0
+
+.price-total__val
+  margin: 0 0 0 10px
+  font-weight: bold
+  color: $green

@@ -77,6 +77,13 @@ $('.reviews-wrapper__slider').slick({
     ]
 });
 
+$('.clients-reviews-slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    fade: true,
+});
+
 $('.type-window__item').click(function () {
    $(this).toggleClass('active');
 });
