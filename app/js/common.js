@@ -77,11 +77,62 @@ $('.reviews-wrapper__slider').slick({
     ]
 });
 
+$('.certificates-slider').slick({
+    slidesToShow: 6,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+$('.result-work-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+
 $('.clients-reviews-slider').slick({
     slidesToShow: 1,
     arrows: false,
     dots: true,
     fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 
 $('.type-window__item').click(function () {
