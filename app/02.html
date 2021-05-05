@@ -26,14 +26,12 @@
 
 <body>
 
-<header>
+<header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-6 col-sm-5 col-lg-2 d-flex align-items-center">
+      <div class="col-12 d-flex align-items-center flex-wrap">
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-      </div>
 
-      <div class="col-6 col-sm-7 col-lg-10 d-flex align-items-center">
         <nav class="navbar navbar-expand-lg">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -41,55 +39,28 @@
                 <a class="nav-link" href="about.html">О нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Работы</a>
+                <a class="nav-link" href="#">Цены</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Услуги</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="calculate.html">Калькулятор</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="news.html">Новости</a>
+                <a class="nav-link" href="#">Готовые решения</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="reviews.html">Отзывы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="vacancy.html">Вакансии</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Контакты</a>
               </li>
             </ul>
 
           </div>
         </nav>
 
-        <ul class="list-social">
-          <li><a href="#" class="vk-links">
-            <svg class="icon-svg">
-              <use xlink:href="img/sprite.svg#vk"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="insta-links">
-            <svg class="icon-svg">
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="fb-links">
-            <svg class="icon-svg">
-              <use xlink:href="img/sprite.svg#fb"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="ok-links">
-            <svg class="icon-svg">
-              <use xlink:href="img/sprite.svg#ok"></use>
-            </svg>
-          </a></li>
-        </ul>
+        <select name="select" class="select">
+          <option value="Выбор города">Выбор города</option>
+          <option value="Выбор города">Выбор города</option>
+          <option value="Выбор города">Выбор города</option>
+        </select>
 
-        <button type="button" class="btn btn-accent" data-toggle="modal" data-target="#callModal">Обратный звонок
+        <a href="tel:+78005621487" class="phone">8 800 562 14 87</a>
+
+        <button type="button" class="btn btn-accent" data-toggle="modal" data-target="#callModal">Связаться
         </button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -109,6 +80,11 @@
   <div class="container">
     <div class="row">
 
+      <div class="col-12 col-md-8 order-md-1">
+        <div class="main-banner"><img src="img/banner3.png" alt="">
+        </div>
+
+      </div>
       <div class="col-12 col-md-4">
         <div class="home-content">
           <h1>Ремонт и регулировка окон ПВХ</h1>
@@ -138,11 +114,6 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-8">
-        <div class="main-banner"><img src="img/banner3.png" alt="">
-        </div>
-
-      </div>
     </div>
   </div>
 </main>
@@ -254,6 +225,9 @@
       <div class="col-12">
         <h2>Бесплатный выезд мастера на дом</h2>
       </div>
+      <div class="col-12 col-lg-6 order-lg-1">
+        <div class="departure-master-img"><img src="img/banner4.png" alt=""></div>
+      </div>
 
       <div class="col-12 col-lg-6">
         <form method="post" class="departure-master-form">
@@ -324,10 +298,6 @@
           </div>
 
         </form>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="departure-master-img"><img src="img/banner4.png" alt=""></div>
       </div>
     </div>
   </div>
@@ -574,13 +544,13 @@
 
         <div class="customer-confidence-number">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
               <div class="customer-confidence-number__item">
                 <div class="number">10</div>
                 <p>Лет на рынке</p>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
               <div class="customer-confidence-number__item">
                 <div class="number">3200</div>
                 <p>Довольных клиентов</p>
@@ -588,7 +558,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
               <div class="customer-confidence-number__item">
                 <div class="number">85</div>
                 <p>Клиентов <br>
@@ -596,7 +566,7 @@
                   нас своим знакомым</p>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
               <div class="customer-confidence-number__item">
                 <div class="number">15</div>
                 <p>Лет гарантии <br>
@@ -648,7 +618,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-lg-3 offset-lg-1">
+      <div class="col-6 col-lg-3 offset-lg-1">
         <div class="recommended-services">
           <a href="#" class="logo-recommended"><img src="img/otzovik.png" alt=""></a>
           <div class="recommended-services__info">
@@ -684,7 +654,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="col-6 col-lg-3">
         <div class="recommended-services">
           <a href="#" class="logo-recommended"><img src="img/2gis.png" alt=""></a>
           <div class="recommended-services__info">
@@ -758,7 +728,7 @@
       </div>
     </div>
     <div class="row stages-work-wrapper">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-30">
+      <div class="col-6 col-md-4 col-lg-2 mb-30">
         <div class="stages-work-box">
           <div class="stages-work-box__img"><img src="img/stage1.png" alt=""></div>
           <div class="stages-work-box__body">
@@ -767,7 +737,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-30">
+      <div class="col-6 col-md-4 col-lg-2 mb-30">
         <div class="stages-work-box">
           <div class="stages-work-box__img"><img src="img/stage2.png" alt=""></div>
           <div class="stages-work-box__body">
@@ -776,7 +746,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-30">
+      <div class="col-6 col-md-4 col-lg-2 mb-30">
         <div class="stages-work-box">
           <div class="stages-work-box__img"><img src="img/stage3.png" alt=""></div>
           <div class="stages-work-box__body">
@@ -785,7 +755,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-30">
+      <div class="col-6 col-md-4 col-lg-2 mb-30">
         <div class="stages-work-box">
           <div class="stages-work-box__img"><img src="img/stage4.png" alt=""></div>
           <div class="stages-work-box__body">
@@ -795,7 +765,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-30">
+      <div class="col-6 col-md-4 col-lg-2 mb-30">
         <div class="stages-work-box">
           <div class="stages-work-box__img"><img src="img/stage5.png" alt=""></div>
           <div class="stages-work-box__body">
@@ -814,6 +784,11 @@
       <div class="col-12 col-md-6 col-lg-5">
         <h2><span class="color-green">БЕСПЛАТНОЕ ОБСЛЕДОВАНИЕ</span> ТЕПЛОВИЗИРОМ
           И ВЛАГОМЕРОМ </h2>
+
+        <div class="d-block d-md-none">
+          <div class="thermal-imager-img"><img src="img/teplovisor.png" alt=""></div>
+        </div>
+
         <ul class="list-dots">
           <li>Быстрый поиск проблемы и ее устранение</li>
           <li>Сокращение расходов на отопление</li>
@@ -821,7 +796,7 @@
         </ul>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-5">
+      <div class="col-12 col-md-6 col-lg-5 d-none d-md-block">
         <div class="thermal-imager-img"><img src="img/teplovisor.png" alt=""></div>
       </div>
     </div>
@@ -836,7 +811,7 @@
       </div>
 
     </div>
-    <div class="row">
+    <div class="row staff-slider">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-30">
         <div class="staff-box">
           <div class="staff-box__img"><img src="img/staff.png" alt=""></div>
@@ -926,7 +901,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row video-reviews-my-slider">
       <div class="col-12 col-lg-6">
         <div class="row">
           <div class="col-12 mb-30">
@@ -936,14 +911,14 @@
             </a>
           </div>
 
-          <div class="col-12 col-md-6 mb-30">
+          <div class="col-12 col-md-6 mb-30 d-none d-sm-block">
             <a data-fancybox="video" href="https://www.youtube.com/embed/LXb3EKWsInQ" class="video-reviews-my__box">
               <img src="img/preview-video2.png" alt="">
               <span class="btn-video-play"><img src="img/play2.svg" alt=""></span>
             </a>
           </div>
 
-          <div class="col-12 col-md-6 mb-30">
+          <div class="col-12 col-md-6 mb-30 d-none d-sm-block">
             <a data-fancybox="video" href="https://www.youtube.com/embed/LXb3EKWsInQ" class="video-reviews-my__box">
               <img src="img/preview-video2.png" alt="">
               <span class="btn-video-play"><img src="img/play2.svg" alt=""></span>
@@ -960,14 +935,14 @@
               <span class="btn-video-play"><img src="img/play2.svg" alt=""></span>
             </a>
           </div>
-          <div class="col-12 col-md-6 mb-30">
+          <div class="col-12 col-md-6 mb-30 d-none d-sm-block">
             <a data-fancybox="video" href="https://www.youtube.com/embed/LXb3EKWsInQ" class="video-reviews-my__box">
               <img src="img/preview-video2.png" alt="">
               <span class="btn-video-play"><img src="img/play2.svg" alt=""></span>
             </a>
           </div>
 
-          <div class="col-12 col-md-6 mb-30">
+          <div class="col-12 col-md-6 mb-30 d-none d-sm-block">
             <a data-fancybox="video" href="https://www.youtube.com/embed/LXb3EKWsInQ" class="video-reviews-my__box">
               <img src="img/preview-video2.png" alt="">
               <span class="btn-video-play"><img src="img/play2.svg" alt=""></span>
@@ -1215,7 +1190,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="offset-lg-1 col-6 col-lg-2">
+      <div class="offset-lg-1 col-6 col-lg-2 d-none d-m=sm-block">
         <ul class="footer-menu">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Наши преимущества</a></li>
@@ -1227,7 +1202,7 @@
         </ul>
       </div>
 
-      <div class="col-6 col-lg-2">
+      <div class="col-6 col-lg-2 d-none d-m=sm-block">
         <ul class="footer-menu">
           <li><a href="#">Калькулятор</a></li>
           <li><a href="#">Почему мы?</a></li>

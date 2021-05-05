@@ -105,17 +105,22 @@
   .address, .schedule
     margin: 0 0 20px
 
-  .main-window .btn
-    margin: 20px 0 0
+  .main-window h1
+    font-size: 36px
 
-  .main-advantages li
-    margin: 0 0 10px
+  .main-window .btn
+    margin: 23px auto 0
+
+  .main-advantages
+    margin: 8px auto 0
+    li
+      margin: 0 0 10px
 
   .customer-confidence
     &__img
       width: 100%
     h2
-      font-size: 30px
+      font-size: 36px
 
   .customer-confidence-number__item .number
     font-size: 54px
@@ -137,6 +142,18 @@
   .sales-box-content h3
     max-width: 220px
 
+  .header
+    .nav-item
+      margin: 0 20px 0 0
+    .phone
+      font-size: 16px
+      margin: 0 10px 0 0
+
+  .select
+    margin: 0 10px 0 auto
+
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .navbar-toggler
@@ -150,7 +167,7 @@
     top: 0
     background: #fff
     width: 100%
-    max-width: 300px
+    max-width: 270px
     padding: 30px
     height: 100%
     overflow-y: auto
@@ -177,8 +194,7 @@
     padding: 40px 20px 30px
 
   .advantages-in-numbers__number
-    font-size: 30px
-    margin: 0 0 20px
+    margin: 0 0 26px
 
   .advantages-in-numbers
     margin: 0 0 30px
@@ -280,8 +296,6 @@
   .equipment-box:nth-child(3) .equipment-box__img
     margin: 0 auto -48px
 
-  .my-title h2
-    font-size: 30px
 
   .type-balcony__item
     margin: 0 auto 20px
@@ -294,21 +308,22 @@
 
   .departure-master-img
     max-width: 500px
-    margin: 30px auto 0
+    margin: 0 auto 23px
 
   .departure-master
-    margin: 40px 0
+    margin: 40px 0 70px
 
   .departure-master-form
     label
       width: 100%
-      max-width: none
+      max-width: 283px
+      margin: 0 auto 25px
     button
-      max-width: 300px
-      margin: 20px auto 0
+      max-width: 162px
+      margin: 0 auto
     .consent
-      max-width: none
-      margin: 10px auto
+      max-width: 133px
+      margin: 13px auto 0
       text-align: center
 
   .departure-master-form h3
@@ -316,33 +331,46 @@
 
   .consultation-img
     right: 0
-    top: -50px
-    max-width: 250px
+    top: -45px
+    max-width: 172px
 
-  .form-consultation
-    margin: 0 auto
-    max-width: 300px
-    label
-      max-width: none
-    .consent
-      text-align: center
-      max-width: none
 
   .consultation-title
-    padding: 40px 0
+    padding: 35px 0 24px
+    margin: 0 0 -80px
     h2
-      font-size: 30px
+      font-size: 24px
+      max-width: 215px
+    &:before
+      width: calc(100% - 56px)
+      left: -20px
+
+
+  .form-consultation
+    max-width: 283px
+    margin: 0 auto
+    label
+      max-width: none
+      margin: 0 auto 25px
+    input
+      text-align: center
+    button
+      max-width: 162px
+      margin: 0 auto
+    .consent
+      max-width: 133px
+      margin: 13px auto 0
 
   .consultation-content
-    padding: 50px 0
+    padding: 150px 0 50px
     &:before
       height: 100%
-      width: calc(100% + 30px)
-      left: -15px
-      border-radius: 0
+      width: 100%
+      left: 0
+      border-radius: 20px
 
   .customer-confidence__img
-    max-width: 300px
+    max-width: 340px
     margin: 30px auto 0
     justify-content: center
     height: auto
@@ -353,16 +381,16 @@
     margin: 0 0 30px
 
   .customer-confidence
-    margin: 30px 0 50px
+    margin: 50px 0
+    padding: 37px 0 0
     h2
       margin: 0 0 40px
 
 
 
   .prices-comparison h2
-    font-size: 30px
+    font-size: 36px
     margin: 0 auto 50px
-    text-align: center
 
   .prices-comparison-img
     max-width: 300px
@@ -399,7 +427,7 @@
 
   .conditions
     padding: 30px
-    margin: 30px auto 0
+    margin: 40px auto 0
     h3
       font-size: 24px
       padding: 0 0 20px
@@ -411,6 +439,9 @@
   .list-conditions
     li
       margin: 0 0 30px
+
+  .header .nav-item
+    margin: 0 0 10px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -446,19 +477,22 @@
     top: 20px
 
   .product-card__title
-    margin: 20px 0 10px
+    margin: 50px auto 20px
 
   .product-card__description
-    margin: 0 auto 10px
+    margin: 0 auto 20px
 
   .product-card
     margin: 0 0 20px
 
-  .installment-plan, .price-wrapper
-    margin: 0 auto 15px
+  .price-wrapper
+    margin: 0 auto 20px
+
+  .installment-plan
+    margin: 0 auto 30px
 
   .product-card__img
-    height: 170px
+    height: 230px
 
   .portfolio-slider
     padding: 0 40px
@@ -665,6 +699,7 @@
 
   .calculate-stages__header
     font-size: 20px
+    flex-wrap: nowrap
     .number
       width: 30px
       height: 30px
@@ -681,21 +716,21 @@
     max-width: none
 
   .main-window .btn
-    margin: 0
+    margin: 13px auto 0
 
   .main-window .home-content
     padding: 0
-    margin: 0 0 30px
 
   .main-advantages
-    justify-content: flex-start
+    justify-content: space-around
     li
       margin: 0 20px 10px 0
       &:last-child
         margin: 0 0 10px
 
   .main-window .main-banner
-    height: 300px
+    height: 337px
+    margin: 0 0 32px
 
   .clients-reviews__box
     padding: 20px
@@ -711,26 +746,42 @@
     padding: 0
 
   .main-repairs .main-banner
-    height: 300px
+    height: 180px
+    margin: 0 0 29px
 
-  .main-repairs .main-advantages
-    margin: 20px 0 0
+  .main-repairs
+    .main-advantages
+      margin: 0
+      order: 1
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      li
+        margin: 0
+    .btn
+      margin: 17px 0 29px
+      max-width: 222px
+      width: 100%
 
   .main-repairs .home-content
     padding: 0
 
   .departure-master-form label:last-child
-    margin: 0 0 20px
+    margin: 0 auto 25px
 
   .thermal-imager-img
-    margin: 30px auto 0
-    max-width: 400px
+    margin: 0px auto 20px
+    max-width: 343px
+
+  .form-bottom
+    margin-top: 19px
 
   .thermal-imager .list-dots li:before
     top: 0
 
   .thermal-imager .list-dots
-    font-size: 16px
+    font-size: 24px
+    padding: 0
 
   .thermal-imager h2
     text-align: center
@@ -751,7 +802,31 @@
     h3
       margin: 0 30px 0 0
 
+  .header
+    padding: 27px 0 0
+    .logo
+      max-width: 134px
+
+  .customer-confidence-number__item .number
+    font-size: 64px
+
+  .customer-confidence-number:before
+    width: 100%
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 700px)
+  .header
+    .logo
+      margin: 0 auto 0 0
+    .phone
+      font-size: 18px
+      margin: 0 23px 0 0
+    .btn, .select
+      order: 1
+      width: 49%
+      margin: 14px auto 0
+      max-width: none
+
 @media only screen and (max-width: 575px)
   header
     .list-social
@@ -780,12 +855,57 @@
 
   .recommended-services
     justify-content: center
-    align-items: center
+    align-items: flex-start
     display: flex
     flex-direction: column
 
   .recommended-services__info
     justify-content: center
+    flex-direction: column
+    align-items: flex-start
+    p
+      margin: 14px 0 0
+      
+  .payment-variable__wrap h2
+    text-align: left
+
+  .list-check li:before
+    width: 45px
+    height: 45px
+
+  .list-check li
+    padding: 0 0 0 60px
+    margin: 0 0 26px
+
+  .reasons-box
+    padding: 40px 14px
+    height: 394px
+    background: linear-gradient(90deg, #000000 26.46%, rgba(0, 0, 0, 0) 56.55%), url('../img/reasons.png') no-repeat 80% center
+      size: cover
+
+  .reasons-box__content
+    max-width: 209px
+    h3
+      font-size: 24px
+
+  .reasons-slider__nav
+    .slick-dots
+      li
+        margin: 0 20px 0 0
+        width: 40px
+        height: 40px
+        min-width: 40px
+        button
+          font-size: 24px
+
+  .clients-reviews__box
+    padding: 28px 30px
+
+  .clients-reviews .btn
+    margin: 70px auto 0
+
+  .clients-reviews
+    margin: 55px 0 60px
 
   .reasons
     margin: 0 0 40px
@@ -820,14 +940,11 @@
     margin: 0 auto 20px
     width: 100%
     max-width: none
+    padding: 25px 36px
 
   .history-company .advantages-in-numbers__box .advantages-in-numbers__img
     left: auto
     right: 0
-
-  .my-title
-    h2
-      font-size: 24px
 
   .category-services
     margin: 0 0 50px
@@ -836,53 +953,194 @@
     margin: 20px 0 0
 
   .consultation-img
-    position: relative
-    right: 0
-    top: 0
-    margin: 20px auto
-    max-width: 200px
+    right: -15px
 
-  .consultation-title
-    padding: 30px 0 20px
-    h2
-      text-align: center
-      margin: 0 auto
+  .consultation-title:before
+    width: calc(100% - 40px)
+    left: -15px
 
   .consultation
-    margin: 50px 0
+    margin: 60px 0
 
   .stages-work-box
-    padding: 0
-    border: none
+    padding: 0 10px 0 0
+
+  .stages-work-wrapper
+    .col-6
+      padding: 0 8px
 
   .variable-payment-box__body
-    width: 100%
-    margin: 30px auto 0
-    text-align: center
+    width: calc(100% - 122px)
+    padding: 0 0 0 60px
 
   .variable-payment-box
     flex-wrap: wrap
+    font-size: 24px
 
   .variable-payment-box__img
-    margin: 0 auto
+    margin: 0
+    width: 122px
+    height: 122px
+
+  .variable-payment-box:first-child .variable-payment-box__img img
+    max-width: 144px
+    left: -2px
+    bottom: 11px
 
   .variable-payment-box:nth-child(2) .variable-payment-box__img img
     bottom: 0
+    left: -11px
+    max-width: 159px
+
+  .variable-payment-box:last-child .variable-payment-box__img img
+    max-width: 70px
+    left: 34px
+    bottom: 5px
 
   .result-work__item
-    margin: 0 auto 30px
+    margin: 0 auto 20px
+    height: 254px
+    border-radius: 10px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
   .certificates
     margin: 40px auto 50px
 
+  .prices-comparison-img
+    font-size: 10px
+
+  .prices-comparison-text:last-child
+    max-width: 96px
+    bottom: 48px
+    left: 74px
+
+  .prices-comparison-text:first-child
+    top: -25px
+
+  .prices-comparison
+    margin: 0 0 20px
+
+  .staff
+    padding: 36px 0 17px
+    margin: 32px 0
+    h2
+      text-align: center
+
+  .video-reviews-my__box
+    height: 156px
+    max-width: 278px
+    margin: 0 auto
+
+  .video-reviews-my__box-max .btn-video-play
+    width: 32px
+    height: 22px
+
+  .sales-my .sales-box
+    padding: 37px 28px 23px
+    
+  .sales-box-title
+    align-items: flex-start
+    text-align: left
+    h3
+      text-align: left
+
+
+  .sales-my
+    .sales-box
+      h3
+        margin: 0 0 38px
+        font-size: 36px
+    .sales-box-content
+      padding: 33px 10px
+      align-items: flex-start
+      h3
+        text-align: left
+        margin: 0 0 23px
+
+  .sale-val
+    font-size: 107px
+    line-height: 102px
+    text-align: left
+
+  .sales-my
+    margin: 59px 0
+
+  .conditions
+    padding: 34px 30px
+    h3
+      font-size: 36px
+      margin: 0 0 25px
+      padding: 0 0 36px
+    h4
+      font-size: 74px
+
+  .list-conditions li
+    margin: 0 0 34px
+
+  .certificates
+    h2
+      font-size: 28px
+
+  .calculate-stages-one
+    .calculate-stages__body
+      padding: 0
+    .type-window__item
+      width: 48%
+
+  .example-price-box
+    max-width: 283px
+    margin: 0 auto
+
+  .example-price
+    margin: 0 0 50px
+
 @media only screen and (max-width: 480px)
   .call-item
-    padding: 30px 20px
+    padding: 28px 11px
     h2
-      margin: 0 0 20px
+      margin: 0 0 16px
+    p
+      margin: 0 0 12px
 
   .call-item .form-group-comment, .call-item .form-group
-    max-width: none
+    &:nth-child(3), &:last-child
+      max-width: none
+
+  .call-item
+    .form-group
+      &:nth-child(3)
+        order: 1
+        max-width: 175px
+        margin: 0 auto
+
+  .call-item-masters .form button
+    margin: 7px auto
+
+  .list-social li
+    margin: 0 25px 0 0
+
+  .list-social li a
+    width: 36px
+    height: 21px
+
+  .list-social li .insta-links
+    width: 28px
+    height: 27px
+
+  .list-social li .fb-links
+    width: 13px
+    height: 26px
+
+  .list-social li .ok-links
+    width: 16px
+    height: 26px
+
+  .call-item-masters .form .consent
+    margin: 0 auto 0
 
   .call-item .form-group button
     margin: 0 auto
@@ -909,63 +1167,67 @@
     margin: 0 0 30px
 
   .calculate-stages__body
-    padding: 0
+    padding: 0 0 0 55px
+    .input-group input
+      width: 45%
 
   .calculate-contacts
     h3
-      font-size: 20px
+      text-align: center
     label
+      max-width: none
       margin: 0 auto 15px
     .btn
       margin: 0 auto 15px
+    .consent
+      margin: 0 auto
+      max-width: 175px
 
-  .equipment-box
-    width: 100%
-    padding: 0
+  .calculate-stages__header
+    font-size: 24px
+    margin: 0 0 9px
+    .number
+      width: 46px
+      height: 46px
+      font-size: 27px
+      min-width: 46px
 
   .advantages-box
-    flex-direction: column
-    align-items: flex-start
-    padding: 20px
-    h3
-      font-size: 18px
+    padding: 25px 11px 34px
+    font-size: 14px
 
   .advantages
     margin: 0 0 40px
 
   .advantages-box__img
-    max-width: 200px
-    margin: 20px auto 0
-    order: 1
+    max-width: 127px
 
   .advantages-box__content
     padding: 0
 
   .type-window__item
-    margin: 0 auto 10px
-    width: 49%
+    margin: 0 auto 27px
+    font-size: 12px
+    width: 30%
     .type-window__item-img
       width: 100%
+      padding: 15px 10px
 
   .profile-brands-wrapper .radio
     width: 20%
 
   .problems-box
-    flex-direction: column
-    align-items: center
-    text-align: center
+
     &__img
-      width: 100%
-      height: 150px
-      border-radius: 20px 20px 0 0
+      width: 139px
+      border-radius: 20px 0px 0px 20px
     &__content
-      width: 100%
-      padding: 15px
-      text-align: center
-      justify-content: center
-      align-items: center
+      width: calc(100% - 139px)
+      padding: 22px 15px 20px
+      justify-content: flex-start
+      align-items: flex-start
     .btn
-      margin: 20px auto 0
+      margin: 22px 0 0
 
   .sales-box-content
     flex-direction: column
@@ -976,6 +1238,18 @@
     h3
       max-width: none
       margin: 0 auto 20px
+
+  .main-advantages
+    .icon
+      width: 43px
+      height: 36px
+      min-width: 43px
+
+  .prices
+    .nav-pills .nav-item
+      margin: 0 0 14px
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -1025,8 +1299,20 @@
     margin: 0 auto 25px
 
   .reasons-box
-    background: linear-gradient(90deg, #000000 35.46%, rgba(0, 0, 0, 0) 80.55%), url("../img/reasons.png") no-repeat right center
+    background: linear-gradient(90deg, #000000 35.46%, rgba(0, 0, 0, 0) 80.55%), url("../img/reasons.png") no-repeat 60% center
       size: 100%, cover
+
+  .reasons-slider__nav .slick-dots
+    justify-content: space-between
+
+
+    li
+      margin: 0
+
+  .reasons-slider__nav
+    padding: 0 30px
+    width: calc(100% - 30px)
+
 
   .trust-us__box
     padding: 0
@@ -1113,5 +1399,102 @@
   .total-sum__val
     font-size: 40px
 
+  .services-main
+    .row
+      margin: 0 -8px
+    .col-6
+      padding: 0 8px
+
   .services-main-box__img
-    height: 100px
+    height: 163px
+
+  .services-main-box__body
+    padding: 29px 0 0
+
+  .header
+    .btn
+      display: flex
+
+  .select
+    min-width: auto
+
+  .equipment-box
+    width: 100%
+    max-width: 192px
+    padding: 0
+    margin: 0 auto 39px
+    .equipment-box__img
+      margin: 0 0 -78px -28px
+    &:nth-child(3)
+      .equipment-box__img
+        margin: 0 0 -45px -47px
+    &:last-child
+      margin: 0 0 39px
+      .equipment-box__img
+        margin: 0 0 -89px -26px
+
+
+  .equipment-box__body
+    padding: 97px 25px 10px
+
+  .prices-my
+    margin: 14px 0 67px
+    h2
+      margin: 0 auto 13px
+    .box-text
+      padding: 15px 12px 10px
+
+  .customer-confidence__icon
+    width: 74px
+    height: 74px
+    min-width: 74px
+
+  .customer-confidence__body
+    width: calc(100% - 74px)
+
+  .type-balcony__item .type-window__item-img
+    padding: 0
+
+  .calculate-stages-one .type-window__item
+    margin: 0 auto 14px
+
+@media only screen and (max-width: 370px)
+  .header
+    .phone
+      font-size: 14px
+      margin: 0 10px 0 0
+
+  .my-title h2
+    font-size: 32px
+
+  .consultation-img
+    max-width: 150px
+    top: -30px
+    right: -35px
+
+  .customer-confidence-number__item .number
+    font-size: 50px
+
+  .customer-confidence__img
+    max-width: 280px
+
+  .sales-my .sales-box h3
+    font-size: 30px
+
+  .sale-val
+    font-size: 90px
+    line-height: 1
+
+  .variable-payment-box__body
+    padding: 0 0 0 30px
+    font-size: 20px
+
+  .conditions
+    h3
+      font-size: 30px
+    h4
+      font-size: 50px
+
+  .certificates
+    h2
+      font-size: 28px

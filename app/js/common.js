@@ -107,12 +107,6 @@ $('.certificates-slider').slick({
             settings: {
                 slidesToShow: 2,
             }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-            }
         }
     ]
 });
@@ -133,8 +127,54 @@ $('.clients-reviews-slider').slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                dots: false,
+            }
+        }
+    ]
 });
 
 $('.type-window__item').click(function () {
    $(this).toggleClass('active');
 });
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.staff-slider:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            fade: true
+        });
+
+        $('.video-reviews-my-slider:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            fade: true
+        });
+
+        $('.example-price-wrapper:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: true,
+            dots: true,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            fade: true
+        });
+    } else {
+        $(".staff-slider.slick-initialized").slick("unslick");
+        $(".video-reviews-my-slider.slick-initialized").slick("unslick");
+        $(".example-price-wrapper.slick-initialized").slick("unslick");
+    }
+});
+// slick active

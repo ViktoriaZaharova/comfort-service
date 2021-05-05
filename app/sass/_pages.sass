@@ -1,5 +1,45 @@
 @import "vars"
 
+.header
+  .nav-link
+    color: #0F5948
+  .nav-item
+    margin: 0 35px 0 0
+    &:last-child
+      margin: 0
+  .phone
+    color: #0F5948
+    font-size: 18px
+    font-weight: bold
+    margin: 0 26px 0 0
+  .navbar-toggler
+    width: 6px
+    height: 27px
+    span
+      width: 6px
+      height: 6px
+      border-radius: 50%
+      background: #85BC5D
+  .navbar
+    margin: 0 0 0 20px
+
+
+
+.select
+  border: 1px solid #0F5948
+    radius: 15px
+  height: 30px
+  color: #5C5C5C
+  font-size: 12px
+  padding: 0 15px 0 11px
+  background: #fff url("../img/select.svg") no-repeat 95% center
+    size: 12px
+  appearance: none
+  min-width: 172px
+  margin: 0 37px 0 auto
+  cursor: pointer
+  outline: none
+
 .main-window
   h1
     font-size: 36px
@@ -21,7 +61,6 @@
   width: 100%
   display: flex
   align-items: center
-  flex-wrap: wrap
   justify-content: space-between
   margin: 16px 0 20px
   font-size: 14px
@@ -379,6 +418,26 @@
   padding: 0 144px
   .col-12
     padding: 0 10px
+  .slick-prev
+    left: 16px
+  .slick-next
+    right: 16px
+  .slick-dots
+    margin: -10px auto 20px
+    position: relative
+    bottom: 0
+    li
+      margin: 0 11px 0 0
+      border: 1px solid #85BC5D
+        radius: 50%
+      background: #fff
+      width: 10px
+      height: 10px
+      button
+        display: none
+    .slick-active
+      background: #85BC5D
+      
 
 .price-total
   width: 100%
@@ -696,9 +755,9 @@
   z-index: 1
   position: relative
   h3
-    font-weight: normal
     font-size: 18px
     margin: 0 0 10px
+    font-weight: bold
 
 .customer-confidence__body
   width: calc(100% - 76px)
@@ -788,7 +847,7 @@
 
 
 
-//thermal-imager
+//thermal-image
 .thermal-imager
   h2
     font-size: 48px
@@ -822,6 +881,14 @@
   padding: 70px 0 20px
   h2
     text-align: left
+
+.staff-slider
+  .slick-arrow
+    filter: brightness(0) invert(1)
+  .slick-prev
+    left: 16px
+  .slick-next
+    right: 16px
 
 .staff-box
   width: 100%
@@ -1035,5 +1102,9 @@
     width: 62px
     height: 43px
 
-
+.video-reviews-my-slider
+  .slick-prev
+    left: 16px
+  .slick-next
+    right: 16px
 
